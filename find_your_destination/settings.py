@@ -76,8 +76,11 @@ WSGI_APPLICATION = 'find_your_destination.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'arun06$find-your-destination',
+        'USER': 'arun06',
+        'PASSWORD': 'find-your-destination',
+        'HOST': 'arun06.mysql.pythonanywhere-services.com',
     }
 }
 
@@ -120,3 +123,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 ALLOWED_HOSTS = ["arun06.pythonanywhere.com","localhost"]
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
